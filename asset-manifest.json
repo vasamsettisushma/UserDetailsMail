@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SendingMail/static/css/main.c85535c5.css",
+    "main.js": "/SendingMail/static/js/main.184d98f4.js",
+    "index.html": "/SendingMail/index.html",
+    "main.c85535c5.css.map": "/SendingMail/static/css/main.c85535c5.css.map",
+    "main.184d98f4.js.map": "/SendingMail/static/js/main.184d98f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c85535c5.css",
+    "static/js/main.184d98f4.js"
+  ]
+}
