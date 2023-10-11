@@ -1,6 +1,5 @@
 import React, {useState} from "react" 
-import emailjs from "@emailjs/browser";
-
+import axios from "axios"
 const EmailRestAPI = () => {
     const [name, setName] = useState(""); 
     const [email, setEmail] = useState(""); 
@@ -16,7 +15,7 @@ const EmailRestAPI = () => {
         const data = {
             service_id:serviceId, 
             template_id:templateId, 
-            user_id:publicKey, 
+            user_id: publickey, 
             template_params:{
                 from_name:name,
                 from_email:email, 
@@ -37,6 +36,7 @@ const EmailRestAPI = () => {
         catch(error) {
             console.log(error);
         }
+    }
     
     return (
         <div>
@@ -58,7 +58,7 @@ const EmailRestAPI = () => {
         </form>
         </div>
     )
-}
+
 }
 
 

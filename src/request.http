@@ -1,0 +1,9 @@
+POST http://localhost:3000/send-email
+Content-Type: application/json
+
+{
+  "to": "vsushma725@gmail.com",
+  "subject": "vsushma725@gmai",
+  "text": "Testing API"
+}
+
