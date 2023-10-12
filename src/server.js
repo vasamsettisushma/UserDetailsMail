@@ -1,6 +1,8 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 
+const hostname = "0.0.0.0";
+
 const app = express();
 
 // Configure Nodemailer with your email service provider's details
@@ -15,6 +17,7 @@ const transporter = nodemailer.createTransport({
 app.use(express.json());
 
 app.post('/send-email', (req, res) => {
+  res.end("Zeet Node");
   const { to, subject, text } = req.body;
 
   const mailOptions = {
@@ -36,6 +39,6 @@ app.post('/send-email', (req, res) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(3000, hostname, () => {
   console.log('Server is running on port 3000');
 });
