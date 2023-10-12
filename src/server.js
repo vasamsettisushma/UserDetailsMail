@@ -17,7 +17,7 @@ const transporter = nodemailer.createTransport({
 app.use(express.json());
 
 app.post('/send-email', (req, res) => {
-  res.end("Zeet Node");
+  res.end("UserDetailsMail");
   const { to, subject, text } = req.body;
 
   const mailOptions = {
